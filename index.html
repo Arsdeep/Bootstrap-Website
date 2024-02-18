@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .jumbotron {
+      background-image: url(Assets/MainWallpaper.jpg);
+      background-size: cover;
+      color: white;
+    }
+    *{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <img id="ramSvg" src="Assets/HeaderLogo.svg" alt="SVG Image" width="50" height="50" style="padding: 5px;" >
+      <a class="navbar-brand" style="font-size: 1.5rem; font-weight: bolder;" href="#">Wolfey.io</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron Section -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4">Welcome to <b>Wolfey.io</b></h1>
+      <p class="lead">Leveraging AI to deliver innovative software solutions.</p>
+      <a href="https://github.com/Arsdeep" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="About" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <br>
+          <p>
+            Welcome to Wolfey.io, where innovative solutions meet unparalleled expertise in software development. Established with a passion for transforming businesses through technology, we specialize in crafting cutting-edge software solutions tailored to meet the unique needs of our clients.
+          </p>
+          <p>
+            Whether you're looking to develop a custom software application, optimize your existing systems, or harness the power of emerging technologies, [Company Name] is your trusted partner every step of the way. Join us on the journey to digital transformation, and let's build a brighter future together.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="Assets/About.jpg" class="img-fluid rounded" style="width:30rem;" alt="About Us">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="Services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/ServiceDataScience.jpg" class="card-img-top" alt="Service 1">
+            <div class="card-body">
+              <h5 class="card-title">Data Analysis and Prediction</h5>
+              <p class="card-text">Our data analysis and prediction services offer comprehensive solutions for extracting valuable insights and making informed decisions from your data. Whether you're dealing with structured or unstructured data, our team of expert data scientists and analysts will employ advanced statistical techniques, machine learning algorithms, and data visualization tools to uncover patterns, trends, and correlations within your datasets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/ServiceWebsite.png" class="card-img-top" alt="Service 2">
+            <div class="card-body">
+              <h5 class="card-title">Building Websites</h5>
+              <p class="card-text">Our website building services offer tailor-made solutions for businesses and individuals looking to establish a strong online presence. From simple static websites to dynamic e-commerce platforms, our team of experienced web developers and designers will work closely with you to understand your unique requirements and bring your vision to life.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/ServiceScripting.jpeg" class="card-img-top" alt="Service 3">
+            <div class="card-body">
+              <h5 class="card-title">Scripting</h5>
+              <p class="card-text">Our scripting services provide efficient and automated solutions for streamlining repetitive tasks and enhancing productivity across various domains. Whether you're looking to automate data processing, system administration, or workflow orchestration, our team of skilled developers can create custom scripts tailored to your specific needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="Contact" class="bg-dark text-white py-5">
+    <div class="container">
+      
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row" style="flex-wrap: wrap-reverse;">
+        
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="SendMsg()">Submit</button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <p>Ready to take your business to the next level with our innovative software solutions?
+            We're here to help!</p>
+          <p>
+            Reach out to us today to discuss your project or learn more about our services.
+          </p>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 Bootstrap Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Form Message Sending Logic -->
+  <script>
+    function sendMessage(text) {
+        const url = `https://api.telegram.org/bot6324531130:AAEEbKEdPmGmzOkpw2mKI_aVpqXeajTgmO0/sendMessage?chat_id=5766558074&text=${encodeURIComponent(
+            text
+        )}`; // The url to request
+        const xht = new XMLHttpRequest();
+        xht.open("GET", url);
+        xht.send();
+    }
+
+    function SendMsg() {
+    let UsrName = document.getElementById("name").value;
+    let UsrEmail = document.getElementById("email").value;
+    let UsrMsg = document.getElementById("message").value;
+
+    if (UsrName == "" || UsrEmail == "" || UsrMsg == "") {
+        alert("Enter all the details!");
+        return;
+    }
+
+    let messagebe = `
+    Name :  ${UsrName}
+    Email :  ${UsrEmail}
+    Message :  ${UsrMsg}
+        `;
+        try {
+            sendMessage(messagebe); // sending to telegram
+            alert("Message sent Successfully."); // on error sending message
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        } catch (error) {
+            alert("Message sending failed. Please try again."); // on error sending message
+        }
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
